@@ -8,7 +8,7 @@ dotEnv.config()
 
 MongoClient.connect(process.env.MONGO_URI)
 .then(()=>{
-    console.log("MongoDB connected successfully")
+    console.log("MongoDB is connected successfully")
 })
 .catch((error)=>{
     console.log("Error: ",error)
