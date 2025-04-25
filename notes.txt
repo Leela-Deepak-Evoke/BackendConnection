@@ -1,0 +1,15 @@
+Steps to integrate Node JS with MongoDB:
+ 
+Step1: created a folder named (NodeMongo) and open it in vs code.
+Step2: initiate the node for the project by command (npm init -y), after that we need some packages to install.
+Step3: install the required packages by given below command
+(npm install express nodemon dotenv)
+Step4: inside the package.json we can see the packages that are installed over there.
+Step5: create a (server.js) file to show the output from the application coming from backend it acts as a gateway btw application and server.
+Step6: create a (.env) file , it is used to store the sensative information like token ID or aything realted to environment files which will be securely stored , while sharing the project aslo.
+Step7: store the backend URL link string inside the  (.env) file , in the URL link replace the last "?" with "project-name" from MongoDB.
+Step8: type the code for (server.js) and inside (package.json) inside the scripts object, add the below given as:
+("start": "nodemon server.js")
+Step9: run the command (npm start) and hit enter, it will launch the server for us.
+Step10: We need to install (Mongoose) in our system to interact with the database from our system. (optional)
+Step11: install mongoDB to the project by following command (npm install mongodb)
