@@ -13,3 +13,12 @@ Step8: type the code for (server.js) and inside (package.json) inside the script
 Step9: run the command (npm start) and hit enter, it will launch the server for us.
 Step10: We need to install (Mongoose) in our system to interact with the database from our system. (optional)
 Step11: install mongoDB to the project by following command (npm install mongodb)
+
+
+Steps to create CRUD project:
+Step1: Clear everything from the (server.ts) file
+Step2: Using terminal run the command given to install those packages (npm install mongoose body-parser)
+Step3: Create models and controllers folder in the project
+Step4: Create the Model with singular form and Capital Letter (ex: Emplyoee , Employees(collection-name))
+Step5: Create Routes Folder to send requests
+Step6: Download and install Postman in your system to test the API links
