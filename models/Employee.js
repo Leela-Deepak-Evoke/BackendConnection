@@ -13,7 +13,7 @@ const employeeSchema = new mongoose.Schema({
         type: Number,
         default: false
     },
-    city: {
+    project: {
         type: String,
     }
 });

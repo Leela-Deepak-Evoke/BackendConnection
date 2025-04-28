@@ -2,12 +2,12 @@ const Employee = require('../models/Employee')
 
 const createEmployee = async (req, res) => {
     try {
-        const { name, email, phone, city } = req.body
+        const { name, email, phone, project } = req.body
         const employee = new Employee({
             name,
             email,
             phone,
-            city
+            project
         })
         await employee.save()
         res.status(201).json(employee)
@@ -43,9 +43,9 @@ const singleEmployee = async (req, res) => {
 
 const updateEmployee = async (req, res) => {
     try {
-        const { name, email, phone, city } = req.body
+        const { name, email, phone, project } = req.body
         const myEmployee = await Employee.findByIdAndUpdate(
-            req.params.id, { name, email, phone, city }
+            req.params.id, { name, email, phone, project }
         )
         if (!myEmployee) {
             return res.status(404).json({ message: "Employee Not Found" })
