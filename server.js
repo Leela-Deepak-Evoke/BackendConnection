@@ -12,7 +12,10 @@ const PORT = process.env.PORT || 3000
 dotEnv.config()
 
 app.use(bodyParser.json())
-app.use(cors())
+app.use(cors({
+    origin: 'http://localhost:1841', // Replace with your frontend's actual URL and port
+    credentials: true,
+}));
 
 mongoose.connect(process.env.MONGO_URI)
     .then(() => {
